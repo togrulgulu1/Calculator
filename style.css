@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+body {
+    background-color: #474747;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #33393e;
+    /* box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25),
+        -15px -15px 20px rgba(255, 255, 255, 0.1); */
+    box-shadow: -5px -8px 20px 0px #000000 inset,
+        0px -2px 20px 0px rgba(128, 128, 128, 0.25) inset,
+        0px 100px 80px 0px #616060;
+}
+
+
+.calculator .buttons {
+    position: relative;
+    display: grid;
+}
+
+.calculator .buttons #value {
+    position: relative;
+    grid-column: span 4;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: end;
+    background: #33393e;
+    color: #eee;
+    box-shadow: inset 15px 15px 20px rgba(0, 0, 0, 0.5),
+        inset -15px -15px 20px rgba(255, 255, 255, 0.1);
+    padding: 0 20px;
+    line-height: 100px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.calculator .buttons span {
+    position: relative;
+    user-select: none;
+    min-width: 40px;
+    padding: 10px;
+    color: #eee;
+    border: 2px solid #333;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.63),
+        -3px -3px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calculator .buttons span:active {
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.25),
+        inset -3px -3px 10px rgba(255, 255, 255, 0.1);
+}
+
+.calculator .buttons span#clear {
+    grid-column: span 2;
+    background-color: #e20f00;
+}
+
+.calculator .buttons span#plus {
+    grid-row: span 2;
+}
+
+.calculator .buttons span#equal {
+    grid-row: span 2;
+    /* background-color: #2196f3; */
+}
+
+.calculator .buttons span#slash,
+.calculator .buttons span#times,
+.calculator .buttons span#minus,
+.calculator .buttons span#plus,
+.calculator .buttons span#equal{
+    background-color: #e48900;
+
+}
+
+
+.calculator .buttons span#clear:active,
+.calculator .buttons span#plus:active,
+.calculator .buttons span#equal:active,
+.calculator .buttons span#slash:active,
+.calculator .buttons span#times:active,
+.calculator .buttons span#minus:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
